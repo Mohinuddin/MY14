@@ -11,8 +11,6 @@ Sender::Sender(QObject *parent) :
 
     m_i=0;
     startTimer(200);
-
-    qDebug()<<"Entry1";
 }
 
 
@@ -23,8 +21,6 @@ void Sender::timerEvent(QTimerEvent *event)
 
     static int icount=0;
 
-    qDebug()<<"Entry2";
-
     if(m_i == 3)
     {
         qDebug() << "Timer ID:" << event->timerId();
@@ -33,8 +29,5 @@ void Sender::timerEvent(QTimerEvent *event)
     }
 }
 
-void Sender::m_show()
-{
-    qDebug()<<"int m_i="<<m_i;
-}
+
 

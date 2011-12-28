@@ -15,8 +15,6 @@ int main(int argc, char *argv[])
 
     Receiver obj_R;
 
-    obj_S.m_show();
-
     QObject::connect(&obj_S,SIGNAL(m_SigSetValue(int)),&obj_R,SLOT(m_slotValueChanged(int)),Qt::DirectConnection);
 
     return a.exec();
