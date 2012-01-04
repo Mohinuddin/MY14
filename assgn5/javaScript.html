@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript" src ="iApps.js"></script>
+<script type="text/javascript">
+function success()
+{
+	alert("Success");
+}
+
+function failure()
+{
+	alert("Failure");
+}
+function show_alert()
+{
+	alert("Alert Function called");
+//	alert(bosch.hello(success,failure,10));
+	alert(qTobject.m_hello("hello mohin"));
+	alert(qTobject.m_hello());
+	alert(bosch.hello(success,failure,57));
+} 
+</script>
+</head>
+<body >
+<input type="button" onclick="show_alert()" value="Mohin" />
+</body>
+</html>
